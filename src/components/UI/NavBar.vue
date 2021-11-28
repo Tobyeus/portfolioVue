@@ -1,20 +1,20 @@
 <template>
-    <div id="navbar">
-        <section id="navbar-links">
+    <section id="navbar">
+        <div id="navbar-links">
             <p>Tobias Tubandt</p>
-        </section>
-        <section id="navbar-rechts">
+        </div>
+        <div id="navbar-rechts">
             <base-button>
-                <p>Home</p>
+                <router-link class="nav-link" to="/home">Home</router-link>
             </base-button>
             <base-button>
-                <p>About me</p>
+                <router-link class="nav-link" to="/about">About me</router-link>
             </base-button>
             <base-button>
-                <p>Projects</p>
+                <router-link class="nav-link" to="/projects">Projects</router-link>
             </base-button>
-        </section>
-    </div>
+        </div>
+    </section>
 </template>
 
 <style scoped>
@@ -25,6 +25,8 @@
     justify-content: space-between;
     align-items: center;
     width: auto;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
 }
 #navbar-rechts{
     display: flex;
@@ -36,9 +38,13 @@
     border: 2px solid #171b24;
     font-size: 2em;
     font-weight: 600;
-    padding: 1em 1.5em;
+    padding: 0.5em;
     line-height: 1;
     color: white;
     text-decoration: none;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
 }
 </style>

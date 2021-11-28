@@ -8,7 +8,7 @@
 .button {
     background: none;
     border: 2px solid #fff;
-    margin: 0.5em 0.5em;
+    margin: 0 0.5em;
     padding: 1em 1.5em;
     font-size: 1em;
     font-weight: 600;
