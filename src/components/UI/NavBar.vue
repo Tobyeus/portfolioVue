@@ -1,29 +1,32 @@
 <template>
     <section id="navbar">
         <div id="navbar-links">
-            <icon-button>
-                <a class='btn-contact' href='https://github.com/Tobyeus'><i class="fab fa-github"></i></a>
-            </icon-button>
-            <icon-button>
-                <a class='btn-contact' href='https://www.linkedin.com/in/tobias-tubandt-70aa061b5/'><i class="fab fa-linkedin-in"></i></a>
-            </icon-button>
-            <icon-button>
-                <a class='btn-contact' href='https://twitter.com/Tobyeus90'><i class="fab fa-twitter"></i></a>
-            </icon-button>
-            <icon-button>
-                <a class='btn-contact' href='mailto:ttubandt90@outlook.de'><i class="far fa-envelope"></i></a>
-            </icon-button>
+            <a href='https://github.com/Tobyeus'>
+                <icon-button class="btn-contact">
+                    <i class="fab fa-github"></i>
+                </icon-button>
+            </a>
+            <a href='https://www.linkedin.com/in/tobias-tubandt-70aa061b5/'>
+                <icon-button class="btn-contact">
+                    <i class="fab fa-linkedin-in"></i>
+                </icon-button>
+            </a>
+            <a href='https://twitter.com/Tobyeus90'>
+                <icon-button class="btn-contact">
+                    <i class="fab fa-twitter"></i>
+                </icon-button>
+            </a>
         </div>
         <div id="navbar-rechts">
-            <base-button>
-                <router-link class="nav-link" to="/home">Home</router-link>
-            </base-button>
-            <base-button>
-                <router-link class="nav-link" to="/about">About me</router-link>
-            </base-button>
-            <base-button>
-                <router-link class="nav-link" to="/projects">Projects</router-link>
-            </base-button>
+            <router-link class="nav-link" to="/home">
+                <base-button class='btn-nav'>Home</base-button>
+            </router-link>
+            <router-link class="nav-link" to="/about">
+                <base-button class='btn-nav'>About</base-button>
+            </router-link>
+            <router-link class="nav-link" to="/projects">
+                <base-button class='btn-nav'>Projects</base-button>
+            </router-link>
         </div>
     </section>
 </template>
@@ -55,11 +58,24 @@
     color: white;
     text-decoration: none;
 }
-.nav-link{
-    text-decoration: none;
-    color: white;
+.btn-contact{
+    transition: 0.4s;
+    color: #fff;
 }
-i{
-    color: white;
+.btn-contact:hover{
+    background-color: #fff;
+    color: #000;
+}
+a{
+}
+.btn-nav{
+    margin: 0 0.5em;
+    padding: 1em 1.5em;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
 }
 </style>

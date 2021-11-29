@@ -1,23 +1,17 @@
 <template>
-    <button class="button">
+    <button class="btn">
         <slot></slot>
     </button>
 </template>
 
 <style scoped>
-.button {
+.btn {
     background: none;
-    border: 2px solid #fff;
-    margin: 0 0.5em;
-    padding: 1em 1.5em;
-    font-size: 1em;
-    font-weight: 600;
-    line-height: 1;
-    text-decoration: none;
     cursor: pointer;
-}
-.button:hover {
-    background-color: #898888;
     transition: 0.4s;
+}
+.btn:hover {
+    background-color: #fff;
+    color: #000;
   }
 </style>
