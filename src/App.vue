@@ -1,17 +1,18 @@
 <template>
-  <nav-bar />
-  <router-view></router-view>
-  <footer-bar />
+  <div id="page-wrapper">
+    <nav-bar />
+    <router-view id="main"></router-view>
+  </div>
 </template>
 
 <script>
 import NavBar from './components/UI/NavBar.vue';
-import FooterBar from './components/UI/FooterBar.vue';
+//import FooterBar from './components/UI/FooterBar.vue';
 
 export default {
   components: {
     NavBar,
-    FooterBar
+    //FooterBar
   },
 }
 </script>
@@ -21,5 +22,12 @@ export default {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+#app {
+  background-image: url('../public/images/main-image.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+#main {
 }
 </style>

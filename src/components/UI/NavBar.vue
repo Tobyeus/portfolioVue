@@ -1,7 +1,18 @@
 <template>
     <section id="navbar">
         <div id="navbar-links">
-            <p>Tobias Tubandt</p>
+            <icon-button>
+                <a class='btn-contact' href='https://github.com/Tobyeus'><i class="fab fa-github"></i></a>
+            </icon-button>
+            <icon-button>
+                <a class='btn-contact' href='https://www.linkedin.com/in/tobias-tubandt-70aa061b5/'><i class="fab fa-linkedin-in"></i></a>
+            </icon-button>
+            <icon-button>
+                <a class='btn-contact' href='https://twitter.com/Tobyeus90'><i class="fab fa-twitter"></i></a>
+            </icon-button>
+            <icon-button>
+                <a class='btn-contact' href='mailto:ttubandt90@outlook.de'><i class="far fa-envelope"></i></a>
+            </icon-button>
         </div>
         <div id="navbar-rechts">
             <base-button>
@@ -21,12 +32,13 @@
 #navbar {
     display: flex;
     flex-direction: row;
-    background-color: #171b24;
+    /* background-color: #171b24; */
     justify-content: space-between;
     align-items: center;
     width: auto;
-    border-bottom: 1px solid #fff;
     text-decoration: none;
+    height: 10vh;
+    padding: 1.5em;
 }
 #navbar-rechts{
     display: flex;
@@ -35,16 +47,19 @@
 }
 #navbar-links{
     background: none;
-    border: 2px solid #171b24;
-    font-size: 2em;
-    font-weight: 600;
-    padding: 0.5em;
-    line-height: 1;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    border: 2px solid #fff;
+    font-size: 1em;
     color: white;
     text-decoration: none;
 }
 .nav-link{
     text-decoration: none;
+    color: white;
+}
+i{
     color: white;
 }
 </style>

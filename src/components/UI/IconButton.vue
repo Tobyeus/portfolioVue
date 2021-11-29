@@ -8,11 +8,11 @@
 .icon-btn {
     background: none;
     border: none;
-    border-radius: 10px;
-    margin: 0.5em;
-    padding: 0.2em 0.4em;
-    font-size: 1.0em;
-    color: white;
+    padding: 0.5em;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
     cursor: pointer;
 }
 .icon-btn:hover {
