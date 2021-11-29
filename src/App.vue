@@ -27,7 +27,7 @@ export default {
   background-image: url('../public/images/main-image.jpg');
   background-size: cover;
   height: 100vh;
-}
-#main {
+  font-family: 'Roboto Slab', serif;
+  
 }
 </style>

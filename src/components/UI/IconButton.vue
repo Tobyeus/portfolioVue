@@ -14,9 +14,6 @@
     line-height: 1;
     text-decoration: none;
     cursor: pointer;
-}
-.icon-btn:hover {
-    background-color: #898888;
     transition: 0.4s;
-  }
+}
 </style>
