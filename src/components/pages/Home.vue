@@ -1,89 +1,19 @@
 <template>
     <section id="main">
+        <base-card class='headline'>
+            <h1>I am Tobias Tubandt</h1>
+        </base-card>
         <div>
                 <img class="profile-pic" src="../../../public/images/profile.png">
         </div>
-        <base-card>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-        </base-card>
-        <base-button @click="openForm" class="contact-me">Contact me</base-button>
-        <base-card v-if="contactOpen">
-            <form class="contact" action="contact">
-                <label for="name">Name:</label>
-                <input type="text" v-model="name">
-                <label for="subject">Subject:</label>
-                <input type="text" v-model="subject">
-                <label for="mail-content">Message:</label>
-                <textarea name="mail-content" id="mail-text" cols="30" rows="10" v-model="text"></textarea>
-                <base-button class="send-button" @click.prevent="sendEmail">Send</base-button>
-                <p class="error" v-if="formValidation">Please fill all fields</p>
-            </form>
+        <base-card class="intro">
+            <h2>Welcome to my website</h2>
+            <p> I am a physics graduate with a passion for programming.<br></p>
         </base-card>
     </section>
 </template>
 
-<script>
-import BaseCard from '../UI/BaseCard.vue';
-export default {
-    components: { BaseCard },
-    data() {
-        return {
-            contactOpen: false,
-            name: '',
-            subject: '',
-            text: '',
-            formInvalid: false,
-        };
-    },
-    methods: {
-        openForm(){
-            this.contactOpen = !this.contactOpen;
-            this.formInvalid = false;
-        },
-        async sendEmail(){
-
-            if ( this.name.trim() === '' || this.subject.trim() === '' || this.name.text.trim() === '') {
-                this.formInvalid = true;
-                return;
-            }
-
-            const response = await fetch('https://portfolio-messages-b1575-default-rtdb.europe-west1.firebasedatabase.app/messages.json',{
-                method: 'POST',
-                body: JSON.stringify({
-                    name: this.name,
-                    subject: this.subject,
-                    text: this.text,
-                })
-            });
-            console.log(response);
-            this.name = '';
-            this.subject = '';
-            this.text = '';
-            this.contactOpen = false;
-        },
-    },
-    computed: {
-            formValidation(){
-                if( this.formInvalid ){
-                    return true;
-                }else {
-                    return false;
-                }
-            }
-    }
-};
-</script>
-
 <style scoped>
-#main {
-    color: #000;
-    opacity: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2em;
-    padding: 2em;
-}
 .profile-pic {
     border: 4px solid #fff;
     border-radius: 200px;
@@ -94,7 +24,14 @@ export default {
 .contact {
     display: flex;
     flex-direction: column;
-    margin: 0.5em;
+    font-size: 1.2em;
+}
+.intro{
+    font-size: 1em;
+    line-height: 1.5;
+}
+.headline{
+    font-size: 1.5em;
 }
 label {
     margin: 0.5em 0;
@@ -102,9 +39,11 @@ label {
 input {
     height: 2em;
     padding: 0.5em;
+    border: 2px solid #000;
 }
 textarea {
     padding: 0.5em;
+    border: 2px solid #000;
 }
 .contact-me {
     margin: 0 0.5em;
@@ -127,5 +66,8 @@ textarea {
 .error{
     color: red;
     margin-top: 0.5em;
+}
+p{
+    padding-top: 0.5em;
 }
 </style>

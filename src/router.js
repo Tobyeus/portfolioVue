@@ -9,16 +9,13 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
-            path: '/home', component: Home,
+            path: '/portfolioDeploy', component: Home,
         },
         {
-            path: '/projects', component: Projects,
+            path: '/portfolioDeploy/projects', component: Projects,
         },
         {
-            path: '/about', component: AboutMe
-        },
-        {
-            path: '/:catchAll(.*)' , redirect: '/home'
+            path: '/portfolioDeploy/about', component: AboutMe
         }
     ]
 });

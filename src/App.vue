@@ -23,11 +23,18 @@ export default {
   margin: 0;
   box-sizing: border-box;
 }
-#app {
+#page-wrapper {
   background-image: url('../public/images/main-image.jpg');
   background-size: cover;
   height: 100vh;
   font-family: 'Roboto Slab', serif;
-  
+}
+#main {
+    color: #000;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
 }
 </style>

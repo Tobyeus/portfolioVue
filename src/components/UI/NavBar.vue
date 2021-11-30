@@ -18,13 +18,13 @@
             </a>
         </div>
         <div id="navbar-rechts">
-            <router-link class="nav-link" to="/home">
+            <router-link class="nav-link" to="/portfolioDeploy">
                 <base-button class='btn-nav'>Home</base-button>
             </router-link>
-            <router-link class="nav-link" to="/about">
+            <router-link class="nav-link" to="/portfolioDeploy/about">
                 <base-button class='btn-nav'>About</base-button>
             </router-link>
-            <router-link class="nav-link" to="/projects">
+            <router-link class="nav-link" to="/portfolioDeploy/projects">
                 <base-button class='btn-nav'>Projects</base-button>
             </router-link>
         </div>

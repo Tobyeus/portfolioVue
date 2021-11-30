@@ -9,6 +9,7 @@
     background: none;
     cursor: pointer;
     transition: 0.4s;
+    font-family: 'Roboto Slab', serif;
 }
 .btn:hover {
     background-color: #fff;
