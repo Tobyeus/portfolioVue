@@ -72,7 +72,9 @@ export default {
 
 <style scoped>
 section {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .contact {
     display: flex;
@@ -112,5 +114,12 @@ textarea {
 .error{
     color: red;
     margin-top: 0.5em;
+}
+h1{
+    padding: 0.5rem;
+    text-align: center;
+}
+p{
+    padding: 0.5rem;
 }
 </style>

@@ -1,21 +1,23 @@
 <template>
-    <section id="main">
-        <base-card class='headline'>
-            <h1>I am Tobias Tubandt</h1>
-        </base-card>
-        <div>
-                <img class="profile-pic" src="../../../public/images/profile.png">
-        </div>
-        <base-card class="intro">
-            <h2>Welcome to my website</h2>
-            <p> I am a physics graduate with a passion for programming.<br></p>
+    <section>
+        <base-card class="main-content">
+            <base-card class='headline'>
+                <h1>I am Tobias Tubandt</h1>
+            </base-card>
+            <div>
+                    <img class="profile-pic" src="../../../public/images/profile.png">
+            </div>
+            <base-card class="intro">
+                <h2>Welcome to my website</h2>
+                <p> I am a physics graduate with a passion for programming.<br></p>
+            </base-card>
         </base-card>
     </section>
 </template>
 
 <style scoped>
 .profile-pic {
-    border: 4px solid #fff;
+    border: 2px solid #000;
     border-radius: 200px;
     width: 200px;
     height: 200px;
@@ -29,9 +31,7 @@
 .intro{
     font-size: 1em;
     line-height: 1.5;
-}
-.headline{
-    font-size: 1.5em;
+    border: 2px solid #000;
 }
 label {
     margin: 0.5em 0;
@@ -69,5 +69,9 @@ textarea {
 }
 p{
     padding-top: 0.5em;
+}
+.headline{
+    font-size: 1.5em;
+    border: 2px solid #000;
 }
 </style>
