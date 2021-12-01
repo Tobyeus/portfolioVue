@@ -15,4 +15,8 @@
     background-color: #fff;
     color: #000;
   }
+.btn-active{
+    background-color: #fff;
+    color: #000;
+}
 </style>

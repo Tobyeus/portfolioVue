@@ -1,7 +1,7 @@
 <template>
   <div id="page-wrapper">
     <nav-bar />
-    <router-view id="main"></router-view>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -29,12 +29,11 @@ export default {
   height: 100vh;
   font-family: 'Roboto Slab', serif;
 }
-#main {
+.main-content {
     color: #000;
-    opacity: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em;
+    border: 2px solid #fff;
 }
 </style>
