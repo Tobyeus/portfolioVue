@@ -11,7 +11,7 @@
             <base-card v-if="projects.kana.open" class="example">
                 <div class="image">
                     <img src="../../../public/images/kana-app.png" alt="">
-                    <p class="project-links"> <a href="https://tobyeus.github.io/KanaAppDeploy/quiz">Production</a> | <a href="https://github.com/Tobyeus/kana-app-vue">Github</a></p>
+                    <p class="project-links"> <a href="https://tobyeus.github.io/KanaAppDeploy">Production</a> | <a href="https://github.com/Tobyeus/kana-app-vue">Github</a></p>
                 </div>
                 <p class="description">This app is a quiz game to learn the japanese writing systems Hiragana and Katakana. Initally I wanted to practise these system myself with the app. As soon as I finished building this application I was already fluent in both alphabets.</p>
             </base-card>
