@@ -4,30 +4,30 @@
             <h1>Here you can find my projects</h1>
             <div>
                 <base-button class="btn-project" :class="projects.kana.open ? 'btn-active' : ''" @click="clickProject('kana')">Kana Quiz App</base-button>
-                <base-button class="btn-project" :class="projects.todo.open ? 'btn-active' : ''" @click="clickProject('todo')">Todo List</base-button>
-                <base-button class="btn-project" :class="projects.memory.open ? 'btn-active' : ''" @click="clickProject('memory')">Memory Game</base-button>
+                <base-button class="btn-project" :class="projects.todo.open ? 'btn-active' : ''" @click="clickProject('todo')">Soon</base-button>
+                <base-button class="btn-project" :class="projects.memory.open ? 'btn-active' : ''" @click="clickProject('memory')">Soon</base-button>
             </div>
             </base-card>
             <base-card v-if="projects.kana.open" class="example">
                 <div class="image">
-                    <img src="../../../public/images/katakana.png" alt="">
-                    <p class="project-links">Production | Github</p>
+                    <img src="../../../public/images/kana-app.png" alt="">
+                    <p class="project-links"> <a href="https://tobyeus.github.io/KanaAppDeploy/quiz">Production</a> | <a href="https://github.com/Tobyeus/kana-app-vue">Github</a></p>
                 </div>
-                <p class="description">Description Kana App</p>
+                <p class="description">This app is a quiz game to learn the japanese writing systems Hiragana and Katakana. Initally I wanted to practise these system myself with the app. As soon as I finished building this application I was already fluent in both alphabets.</p>
             </base-card>
             <base-card v-if="projects.todo.open" class="example">
                 <div class="image">
                     <img src="" alt="">
                     <p class="project-links">Production | Github</p>
                     </div>
-                    <p class="description">Description Todo List</p>
+                    <p class="description">This just a placeholder</p>
             </base-card>
             <base-card v-if="projects.memory.open" class="example">
                 <div class="image">
                     <img src="" alt="">
                     <p class="project-links">Production | Github</p>
                 </div>
-                <p class="description">Description Memory Game</p>
+                <p class="description">This just a placeholder</p>
             </base-card>
     </section>
 </template>

@@ -3,7 +3,7 @@ import { createWebHistory } from 'vue-router';
 
 import Home from './components/pages/Home.vue';
 import Projects from './components/pages/ProjectsView.vue';
-import AboutMe from './components/pages/AboutMe.vue';
+import Contact from './components/pages/Contact.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -15,7 +15,7 @@ const router = createRouter({
             path: '/portfolioDeploy/projects', component: Projects,
         },
         {
-            path: '/portfolioDeploy/about', component: AboutMe
+            path: '/portfolioDeploy/about', component: Contact
         }
     ]
 });
