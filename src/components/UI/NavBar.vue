@@ -22,7 +22,7 @@
                 <base-button class='btn-nav'>Home</base-button>
             </router-link>
             <router-link class="nav-link" to="/portfolioDeploy/about">
-                <base-button class='btn-nav'>About</base-button>
+                <base-button class='btn-nav'>Contact</base-button>
             </router-link>
             <router-link class="nav-link" to="/portfolioDeploy/projects">
                 <base-button class='btn-nav'>Projects</base-button>
@@ -34,29 +34,27 @@
 <style scoped>
 #navbar {
     display: flex;
-    flex-direction: row;
-    /* background-color: #171b24; */
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
-    width: auto;
-    text-decoration: none;
-    height: 10vh;
-    padding: 1.5em;
+    padding-top: 1.5em;
 }
 #navbar-rechts{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    height: 50px;
 }
 #navbar-links{
-    background: none;
     display: flex;
     flex-direction: row;
     align-content: center;
     border: 2px solid #fff;
-    font-size: 1em;
-    color: white;
-    text-decoration: none;
+    margin: 1rem;
+    height: 50px;
+}
+.fab{
+    font-size: 1.4rem;
 }
 .btn-contact{
     transition: 0.4s;
@@ -66,16 +64,39 @@
     background-color: #fff;
     color: #000;
 }
-a{
-}
 .btn-nav{
-    margin: 0 0.5em;
-    padding: 1em 1.5em;
-    font-size: 1em;
-    font-weight: 600;
+    margin: 0 0.5rem;
+    padding: 0.8rem 0.8rem;
+    height: 100%;
+    font-size: 0.9rem;
+    font-weight: 500;
     line-height: 1;
     text-decoration: none;
     color: #fff;
     border: 2px solid #fff;
+}
+@media (min-width: 650px) {
+    #navbar {
+        flex-direction: row;
+        /* background-color: #171b24; */
+        justify-content: space-between;
+        width: auto;
+        padding: 1.5em;
+    }
+    #navbar-rechts{
+        height: 60px;
+    }
+    #navbar-links{
+        border: 2px solid #fff;
+        height: 60px;
+    }
+    .btn-nav{
+        padding: 1em 1.5em;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .fab{
+    font-size: 2rem;
+    }
 }
 </style>
