@@ -2,7 +2,7 @@
     <section>
         <base-card class="main-content">
             <h1>Here you can find my projects</h1>
-            <div>
+            <div class="projects">
                 <base-button class="btn-project" :class="projects.kana.open ? 'btn-active' : ''" @click="clickProject('kana')">Kana Quiz App</base-button>
                 <base-button class="btn-project" :class="projects.todo.open ? 'btn-active' : ''" @click="clickProject('todo')">Soon</base-button>
                 <base-button class="btn-project" :class="projects.memory.open ? 'btn-active' : ''" @click="clickProject('memory')">Soon</base-button>
@@ -99,7 +99,20 @@ img{
 .project-links{
     text-align: center;
 }
+h1{
+    text-align: center;
+}
 p{
     font-size: 1.2rem;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 650px) {
+    .projects{
+        display: flex;
+        flex-direction: row;
+    }
 }
 </style>

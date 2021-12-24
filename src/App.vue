@@ -25,12 +25,10 @@ export default {
   }
 #page-wrapper {
     background-image: url('../public/images/main-image.jpg');
-    background-position: top center;
-    background-size: auto 100%;
+    background-size: cover;
     height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
     font-family: 'Roboto Slab', serif;
+    overflow: auto;
 }
 .main-content {
       color: #000;
@@ -39,6 +37,7 @@ export default {
       align-items: center;
       border: 2px solid #fff;
       width: 70%;
+      margin: 1rem;
   } 
 
 @media (min-width: 650px) {
@@ -47,6 +46,7 @@ export default {
     background-size: cover;
     height: 100vh;
     font-family: 'Roboto Slab', serif;
+    overflow-y: auto;
   }
   .main-content {
       color: #000;

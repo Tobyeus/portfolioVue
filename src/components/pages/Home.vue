@@ -39,20 +39,8 @@
     line-height: 1.5;
     border: 2px solid #000;
 }
-label {
-    margin: 0.5rem 0;
-}
-input {
-    height: 2rem;
-    padding: 0.5rem;
-    border: 2px solid #000;
-}
-textarea {
-    padding: 0.5rem;
-    border: 2px solid #000;
-}
 p{
-    padding-top: 0.5rem;
+    padding: 0.5rem;
 }
 .headline{
     text-align: center;
