@@ -34,7 +34,7 @@
 <style scoped>
 #navbar {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 1.5em;
@@ -68,8 +68,8 @@
     margin: 0 0.5rem;
     padding: 0.8rem 0.8rem;
     height: 100%;
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 600;
     line-height: 1;
     text-decoration: none;
     color: #fff;
