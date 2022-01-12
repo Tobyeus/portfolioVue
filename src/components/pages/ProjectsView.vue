@@ -13,7 +13,10 @@
                     <img src="../../../public/images/kana-app.png" alt="">
                     <p class="project-links"> <a href="https://tobyeus.github.io/KanaAppDeploy">Production</a> | <a href="https://github.com/Tobyeus/kana-app-vue">Github</a></p>
                 </div>
-                <p class="description">This app is a quiz game to learn the japanese writing systems Hiragana and Katakana. Initally I wanted to practise these system myself with the app. As soon as I finished building this application I was already fluent in both alphabets.</p>
+                <p class="description">
+                    This app is a quiz game to learn the japanese writing systems Hiragana and Katakana. Initally I wanted to practise these system myself with the app. 
+                    As soon as I finished building this application I was already fluent in both alphabets. If you want to try it and don't know any of the signs you can find the alphabets on <a href="https://en.wikipedia.org/wiki/Kana#Hiragana_and_katakana">Wikipedia</a>.
+                </p>
             </base-card>
             <base-card v-if="projects.todo.open" class="example">
                 <div class="image">
